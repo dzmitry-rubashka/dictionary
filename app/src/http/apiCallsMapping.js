@@ -1,5 +1,5 @@
-import * as resultPageActions from '../pages/resultPage/actions';
-import * as resultPageAPI from '../pages/resultPage/api';
+import * as resultPageActions from '../pages/homePage/actions';
+import * as resultPageAPI from '../pages/homePage/api';
 
 const apiCallsMapping = (action) => {
   const mapping = {

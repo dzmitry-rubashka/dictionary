@@ -3,7 +3,7 @@ import {persistReducer} from 'redux-persist';
 
 import storage from 'redux-persist/lib/storage';
 
-import resultPageReducer from "../pages/resultPage/reducers";
+import homePageReducer from "../pages/homePage/reducers";
 
 const persistConfig = {
   key: 'root',
@@ -11,7 +11,7 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  word: resultPageReducer,
+  word: homePageReducer,
 });
 
 export default persistReducer(persistConfig, rootReducer);

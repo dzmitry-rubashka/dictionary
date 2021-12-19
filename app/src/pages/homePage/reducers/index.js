@@ -8,7 +8,7 @@ const defaultState = {
   info: {},
 }
 
-const resultPageReducer = handleActions(
+const homePageReducer = handleActions(
   {
     [actions.GET_WORD_REQUEST]: (state) => ({
       ...state,
@@ -31,4 +31,4 @@ const resultPageReducer = handleActions(
   defaultState
 )
 
-export default resultPageReducer;
+export default homePageReducer;

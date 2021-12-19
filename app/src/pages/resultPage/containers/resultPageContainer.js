@@ -1,9 +1,10 @@
-const ResultPageContainer = () => {
-  return (
-    <div>
+import ResultPageLayout from "../components/resultPageLayout";
 
-    </div>
-  );
+const ResultPageContainer = () => {
+
+  return <ResultPageLayout
+
+  />
 };
 
 export default ResultPageContainer;
