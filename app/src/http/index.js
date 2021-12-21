@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://dictionaryapi.dev';
+const baseURL = 'https://api.dictionaryapi.dev';
 
 const config = {
   baseURL,

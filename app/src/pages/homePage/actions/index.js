@@ -1,4 +1,4 @@
-import { createAction } from 'redux-actions';
+import {createAction} from 'redux-actions';
 
 export const GET_WORD_REQUEST = createAction('GET_WORD_REQUEST');
 export const GET_WORD_SUCCESS = createAction('GET_WORD_SUCCESS');

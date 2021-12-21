@@ -1,9 +1,9 @@
-import * as resultPageActions from '../pages/homePage/actions';
-import * as resultPageAPI from '../pages/homePage/api';
+import * as homePageActions from '../pages/homePage/actions';
+import * as homePageAPI from '../pages/homePage/api';
 
 const apiCallsMapping = (action) => {
   const mapping = {
-    [resultPageActions.GET_WORD_REQUEST]: resultPageAPI.getWord,
+    [homePageActions.GET_WORD_REQUEST]: homePageAPI.getWord,
   };
   return mapping[action.type]
 }
