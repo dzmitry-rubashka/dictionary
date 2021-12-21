@@ -7,6 +7,7 @@ const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
   const {register, handleSubmit, formState:{errors}} = useForm();
 
   const onSubmit = (word) => {
+    handleGoToWord(word.searchWord)
     console.log(word.searchWord);
   }
 

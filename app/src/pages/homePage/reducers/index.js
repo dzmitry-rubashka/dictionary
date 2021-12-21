@@ -6,6 +6,7 @@ const defaultState = {
   isLoading: false,
   error: null,
   info: {},
+  isError: false,
 }
 
 const homePageReducer = handleActions(
@@ -19,12 +20,14 @@ const homePageReducer = handleActions(
       ...state,
       info: payload.response,
       isLoading: false,
+      isError: false,
     }),
 
     [actions.GET_WORD_FAIL]: (state, {payload}) => ({
       ...state,
       error: payload,
       isLoading: false,
+      isError: true,
     }),
 
   },
