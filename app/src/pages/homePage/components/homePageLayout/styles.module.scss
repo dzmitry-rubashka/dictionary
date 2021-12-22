@@ -1,5 +1,5 @@
 .title {
-  font-size: 64px;
+  font-size: 96px;
   color: #214b31;
   font-family: 'Architects Daughter', cursive;
   text-align: center;
@@ -12,7 +12,7 @@
 .error {
   font-family: 'Architects Daughter', cursive;
   color: #5d2020;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .search {
@@ -20,4 +20,20 @@
   margin-right: 10px;
   font-size: 32px;
   color: #371c56;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 10px;
+  background-color: #67bb85;
+  border: 3px solid #214b31;
+  border-radius: 15px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 24px;
+  outline:none;
+}
+
+.image {
+  width: 80px;
+  box-shadow: none;
 }

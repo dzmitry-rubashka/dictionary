@@ -1,6 +1,10 @@
 import styles from "./styles.module.scss"
+import Button from "@mui/material/Button";
+
+import search from '../../../../static/images/search.svg';
 
 import {useForm} from "react-hook-form";
+
 
 const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
 
@@ -8,7 +12,6 @@ const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
 
   const onSubmit = (word) => {
     handleGoToWord(word.searchWord)
-    console.log(word.searchWord);
   }
 
   return (
@@ -16,12 +19,9 @@ const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
       <h1 className={styles.title}>Free Dictionary API</h1>
       <div className={styles.form}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div>
-            <label className={styles.search}>Search</label>
-            <input placeholder='Search Word' type="text" {...register("searchWord", { required: true, minLength: 1 })}/>
-          </div>
-          {errors.searchWord && <p className={styles.error}>The minimum length of a word is 1 character.</p>}
-          <button type='submit'>Search</button>
+          <input placeholder='Search' type="text" {...register("searchWord", { required: true, minLength: 1 })}/>
+          <Button type='submit'>{<img src={search} alt={"search"} className={styles.image}/>}</Button>
+          {errors.searchWord && <p className={styles.error}>The minimum length of a word is one character.</p>}
         </form>
       </div>
     </div>

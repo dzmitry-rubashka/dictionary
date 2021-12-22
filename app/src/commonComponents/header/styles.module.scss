@@ -1,6 +1,7 @@
 header {
   color: #371c56;
   font-family: 'Architects Daughter', cursive;
+  text-align: center;
 }
 
 .developer {
@@ -13,10 +14,11 @@ header {
   display: inline-block;
   font-size: 22px;
   vertical-align: middle;
+  margin: 0 15px;
 }
 
 .image {
-  width: 36px;
+  width: 32px;
   vertical-align: middle;
 }
 

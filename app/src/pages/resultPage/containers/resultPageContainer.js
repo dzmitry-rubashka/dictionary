@@ -9,7 +9,6 @@ const ResultPageContainer = () => {
   const dispatch = useDispatch();
   const {info, isLoading, isError, error} = useSelector(state => state.word);
   const {word} = useParams();
-  console.log(isError ? error.response : info)
 
   useEffect((info)=> {
     dispatch(GET_WORD_REQUEST(word))
