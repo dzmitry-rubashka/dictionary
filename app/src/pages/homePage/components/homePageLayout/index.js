@@ -13,7 +13,6 @@ const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
   const onSubmit = (word) => {
     handleGoToWord(word.searchWord)
   }
-
   return (
     <div>
       <h1 className={styles.title}>Free Dictionary API</h1>
@@ -29,3 +28,5 @@ const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
 };
 
 export default HomePageLayout;
+
+
