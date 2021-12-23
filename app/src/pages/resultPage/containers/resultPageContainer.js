@@ -10,13 +10,15 @@ const ResultPageContainer = () => {
   const {info, isLoading, isError, error} = useSelector(state => state.word);
   const {word} = useParams();
 
-  useEffect((info)=> {
+  useEffect(()=> {
     dispatch(GET_WORD_REQUEST(word))
   },[dispatch, word])
 
-
   return <ResultPageLayout
-
+    info={info}
+    isLoading={isLoading}
+    isError={isError}
+    error={error}
   />
 };
 
