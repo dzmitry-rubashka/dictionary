@@ -1,28 +1,68 @@
-header {
-  color: #371c56;
-  font-family: 'Architects Daughter', cursive;
-  text-align: center;
+@media screen and (max-width: 2560px) {
+
+  header {
+    color: #371c56;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+  }
+
+  .developer {
+    display: inline-block;
+    font-size: 28px;
+    vertical-align: middle;
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+  }
+
+  .image {
+    width: 32px;
+    vertical-align: middle;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
 }
 
-.developer {
-  display: inline-block;
-  font-size: 28px;
-  vertical-align: middle;
+@media screen and (max-width: 1024px) {
+
+  .developer {
+    font-size: 24px;
+  }
+
+  .image {
+    width: 30px;
+  }
+
 }
 
-.icon {
-  display: inline-block;
-  font-size: 22px;
-  vertical-align: middle;
-  margin: 0 15px;
+@media screen and (max-width: 768px) {
+
+  .developer {
+    font-size: 22px;
+  }
+
+  .image {
+    width: 28px;
+  }
+
 }
 
-.image {
-  width: 32px;
-  vertical-align: middle;
+@media screen and (max-width: 425px) {
+
+  .developer {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 24px;
+  }
+
 }
 
-.link {
-  text-decoration: none;
-}
 

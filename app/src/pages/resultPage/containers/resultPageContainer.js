@@ -1,7 +1,7 @@
 import ResultPageLayout from "../components/resultPageLayout";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
-import {useEffect} from "react";
+import {useLayoutEffect} from "react";
 import {GET_WORD_REQUEST} from "../../homePage/actions";
 
 const ResultPageContainer = () => {
@@ -10,7 +10,7 @@ const ResultPageContainer = () => {
   const {info, isLoading, isError, error} = useSelector(state => state.word);
   const {word} = useParams();
 
-  useEffect(()=> {
+  useLayoutEffect(()=> {
     dispatch(GET_WORD_REQUEST(word))
   },[dispatch, word])
 

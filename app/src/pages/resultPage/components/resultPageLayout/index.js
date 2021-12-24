@@ -13,19 +13,17 @@ const ResultPageLayout = ({info, isLoading, isError, error}) => {
     <div className={styles.props}>
       {isLoading ? <CircularProgress/> :
         <div>
-          <div className={styles.button}>
-            <Link to={ROUTES.HOME_PAGE} className={styles.link}>
-              <Button style={{fontSize: '20px', backgroundColor: 'rgb(100,88,95)', color: '#9a782f', fontFamily: 'Architects Daughter, cursive'}}>Back To Home Page</Button>
-            </Link>
-          </div>
+          <Link to={ROUTES.HOME_PAGE} className={styles.link}>
+            <Button style={{fontSize: '20px', backgroundColor: 'rgb(100,88,95)', color: '#9a782f', fontFamily: 'Architects Daughter, cursive'}}>Back To Home Page</Button>
+          </Link>
           <div>
             {isError ? <p className={styles.error}>{error.response}</p> :
               <>
                 <p className={styles.description}>Word: <span className={styles.word}>{info[0].word}</span></p>
-                <p className={styles.description}>Transcription: {info[0].phonetics[0]?.text}</p>
-                <p className={styles.description}>Pronunciation:</p>
-                {info[0].phonetics[0]?.audio ? <audio src={info[0].phonetics[0]?.audio} controls></audio> : null}
-                {info[0].phonetics[1]?.text ? <p className={styles.description}>{info[0].phonetics[1]?.text}</p> : null}
+                {info[0].phonetics[0]?.text ? <p className={styles.description}>Transcription: {info[0].phonetics[0]?.text}</p> : null}
+                {info[0].phonetics[0]?.audio ? <p className={styles.description}>Pronunciation:</p> : null}
+                {info[0].phonetics[0]?.audio ? <div className={styles.audio}><audio src={info[0].phonetics[0]?.audio} controls></audio></div> : null}
+                {info[0].phonetics[1]?.text ? <p className={styles.description}>Transcription: {info[0].phonetics[1]?.text}</p> : null}
                 {/*<audio src={info[0].phonetics[1]?.audio} controls></audio>*/}
                 {info[0].meanings[0]?.partOfSpeech ? <p className={styles.description}>Part Of Speech: {info[0].meanings[0]?.partOfSpeech}</p> : null}
                 {info[0].meanings[0]?.definitions[0].definition ? <p className={styles.description}>Meaning: {info[0].meanings[0]?.definitions[0].definition}</p> : null}
