@@ -12,7 +12,6 @@ const HomePageContainer = () => {
 
   return (
     <HomePageLayout
-
       handleGoToWord={handleGoToWord}
     />
   );

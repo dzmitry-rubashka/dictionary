@@ -5,14 +5,14 @@ import search from '../../../../static/images/search.svg';
 
 import {useForm} from "react-hook-form";
 
-
-const HomePageLayout = ({handleGoToWord, isLoading, word}) => {
+const HomePageLayout = ({handleGoToWord}) => {
 
   const {register, handleSubmit, formState:{errors}} = useForm();
 
   const onSubmit = (word) => {
     handleGoToWord(word.searchWord)
   }
+
   return (
     <div>
       <h1 className={styles.title}>Free Dictionary API</h1>

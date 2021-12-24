@@ -10,8 +10,8 @@ import Routes from "./routes/routes";
 import MainLayout from "./commonComponents/layout/mainLayout";
 
 import {configureStore} from "./store/configureStore";
-const store = configureStore();
 
+const store = configureStore();
 const persistor = persistStore(store);
 
 ReactDOM.render(
