@@ -3,7 +3,7 @@ import { handleActions } from 'redux-actions';
 import * as actions from '../actions';
 
 const defaultState = {
-  isLoading: false,
+  isLoading: true,
   error: null,
   info: {},
   isError: false,
