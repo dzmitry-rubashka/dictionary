@@ -1,0 +1,75 @@
+@media screen and (max-width: 2560px) {
+  .title {
+    font-size: 96px;
+    color: #214b31;
+    font-family: "Architects Daughter", cursive;
+    text-align: center;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .error {
+    font-family: "Architects Daughter", cursive;
+    color: #5d2020;
+    font-size: 24px;
+  }
+
+  .search {
+    font-family: "Architects Daughter", cursive;
+    margin-right: 10px;
+    font-size: 32px;
+    color: #371c56;
+  }
+
+  input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #67bb85;
+    border: 3px solid #214b31;
+    border-radius: 15px;
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    outline: none;
+  }
+
+  .image {
+    width: 80px;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 72px;
+  }
+
+  .error {
+    font-size: 22px;
+  }
+
+  .image {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 44px;
+  }
+
+  .error {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .error {
+    font-size: 18px;
+  }
+}
